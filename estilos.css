@@ -1,0 +1,46 @@
+*{
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.cabecera {
+	text-align: center;
+	font-size: 14p;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+}
+
+nav {
+	width: 100%;
+	background-color: #444;
+}
+
+.menu ul {
+	display: flex;
+}
+
+.menu a {
+	display: block;
+	padding: 1em;
+	background-color: #444;
+	color: #fff;
+}
+
+.menu a:hover {
+	background-color: #CC673B;
+}
+
+.menu ul li ul {
+	display: none;
+	position: absolute;
+	min-width: 130px;
+}
+
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+	float: left;
+	display: block;
+}
